@@ -1,0 +1,528 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #80808029;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+/* ---------- INÍCIO DO TOPO --------- */
+header {
+  width: 100%;
+  background: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+}
+
+.topo {
+  max-width: 1024px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+
+  & img {
+    width: 32px;
+    height: 32px;
+  }
+
+  & p {
+    font-size: 24px;
+    margin-left: 10px;
+    color: #5d15d1;
+  }
+}
+
+/* -------------- FIM DO TOPO -------------- */
+
+
+.conteudo-principal {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.conteudo-background {
+  width: 100%;
+  background-image: url(assets/bahia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+/* ------ INICIO DA AREA DO FORMULÁRIO ------ */
+.conteudo-formulario {
+  max-width: 1024px;
+  width: calc(100% - 10%);
+  margin: 50px auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  object-fit: cover;
+  
+  & .img-titulo {
+    display: flex;
+    height: 35px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #5d15d1;
+    
+    & img {
+      width: 20px;
+      height: 20px;
+      transform: rotate(-45deg);
+    }
+    
+    & h1 {
+      color: #fff;
+      font-size: 14px;
+      margin-left: 5px;
+    }
+  }
+}
+
+.conteudo-formulario .dados-form {
+  width: 100%;
+  background-color: #fff;
+  padding: 30px 25px 20px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  & h3 {
+    font-size: 22px;
+    margin: 0 10px 24px;
+  }
+  
+  & label {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  
+  & .data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  & .label-data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  & .seletor {
+    max-width: 1024px;
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 10px 12px;
+  }
+  
+  & .seletor-label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-left: 0;
+    padding: 0;
+    
+    & label {
+      margin-left: 0;
+    }
+  }
+  
+  & select {
+    height: 30px;
+    width: 100%;
+    padding: 0 3px;
+  }
+  
+  & .radio {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 10px;
+  }
+  
+  & .radio-sim-nao {
+    display: flex;
+  }
+  
+  & .radio-sim-nao input {
+    height: 15px;
+  }
+  
+  & .radio-sim-nao div {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  & legend {
+    font-size: 18px;
+  }
+  
+  & .checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 10px;
+  }
+  
+  & .checkbox-preferencia {
+    display: flex;
+    gap: 30px;
+  }
+  
+  & .checkbox-preferencia input {
+    height: 15px;
+  }
+  
+  & .checkbox-preferencia div {
+    display: flex;
+    width: 120px;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  & .botao {
+    margin: 12px 10px 0;
+  }
+  
+  & .botao button {
+    width: 160px;
+    height: 32px;
+    margin-top: 20px;
+    background-color: #5d15d1;
+    padding: 5px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+/* ------- FIM DA AREA DO FORMULARIO ---------- */
+
+.input {
+  margin: 0 10px;
+  height: 32px;
+  font-size: 16px;
+  padding: 5px;
+}
+
+/* ---------- INÍCIO DO CONTEUDO OFERTA ------------ */
+.conteudo-oferta {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  max-width: 1024px;
+  width: calc(100% - 10px);
+  margin: 32px auto 0;
+  padding-top: 20px;
+
+  & .subtitulo-paragrafo {
+    width: calc(100% - 10px);
+    margin: 0 auto;
+  }
+  
+  
+  & h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  & p {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 15px;
+  }
+  
+  & span {
+    font-weight: bold;
+  }
+}
+
+.oferta-imagens {
+  display: flex;
+  width: calc(100% - 10px);
+  height: 375px;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+
+.imagem-unica {
+  position: relative;
+  width: calc(100% - 10px);
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  overflow: hidden;
+  margin-right: 6px;
+  
+  & img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-sizing: border-box;
+  }
+}
+
+.imagens-varias {
+  width: calc(100% - 10px);
+  height: 100%;
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  
+  & img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+.imagens {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.legenda {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 17px;
+  color: #fff;
+  padding: 5px 10px;
+}
+/* -------------- FIM CONTEUDO OFERTA --------------- */
+
+
+/* ---------------- INÍCIO CONTEUDO ANUNCIO---------- */
+.conteudo-anuncio {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  width: calc(100% - 10px);
+  
+  & div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  & h3 {
+    font-size: 20px;
+  }
+  
+  & p {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+  }
+  
+  & .anuncio-imagens {
+    width: calc(100% - 10px);
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    
+    & .imagem-anuncio {
+      width: 100%;
+    }
+    
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    & .subtitulo-paragrafo {
+      width: 100%;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+
+    & h3 {
+      font-size: 16px;
+    }
+
+    & p {
+      font-size: 14px;
+      color: gray;
+      margin-top: 15px;
+    }
+  }
+}
+/* ----------- FIM CONTEUDO ANUNCIO -------------  */
+
+/* --------------- INÍCIO DO FOOTER -------------- */
+footer {
+  width: 100%;
+  background-color: #5d15d1;
+  margin-top: 32px;
+}
+
+.footer {
+  display: flex;
+  max-width: 1024px;
+  margin: 32px auto 0;
+  justify-content: space-between;
+  padding: 10px;
+  
+  & div {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  & h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  & ul {
+    list-style: none;
+  }
+  
+  & li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin: 5px 0;
+    
+    & img {
+      width: 18px;
+      
+    }
+    
+    & small {
+      font-size: 14px;
+      margin-left: 10px;
+      color: #fff;
+    }
+  }
+}
+/* -------------- FIM DO FOOTER ----------------- */
+
+@media (max-width: 110px) {
+  .topo, .conteudo-formulario, .conteudo-oferta, .conteudo-anuncio, .footer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .conteudo-formulario .dados-form {
+    
+    & .botao button {
+      width: 100%;
+    }
+  }
+
+  .conteudo-oferta {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .oferta-imagens {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 0;
+
+    & .imagem-unica img {
+      width: 100%;
+      height: 225px;
+    }
+  }
+
+  .imagens-varias {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    & img {
+      width: 100%;
+      height: 225px;
+    }
+  }
+
+  .conteudo-anuncio {
+    display: flex;
+    flex-direction: column; 
+    width: calc(100% - 10px);
+    margin-left: 10px;
+    padding: 20px;
+
+    & .anuncio-imagens {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px auto 0;
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    & div {
+      width: 250px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+
+  .conteudo-formulario .dados-form {
+    & .seletor, .data {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    & .radio-sim-nao, .checkbox-preferencia {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
